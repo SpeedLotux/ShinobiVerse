@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+  <div>
+    <div>
+      <header class="header">
+        <section class="flex">
+          <div class="logo">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="home.html">Shinobi Verse</a>
+          </div>
+          <div class="search-form">
+            <form action="" class="search-bar">
+              <input type="search" id="searchBox" maxlength="100"/>
+              <label for="searchBox" class="fas fa-search"></label>
+            </form>
+            <a href="filter.html" class="fas fa-filter"></a>
+          </div>
+
+          <a href="login.html" class="btn"> <i class="fas fa-user"></i> login</a>
+
+          <div id="search-toggler" class="fas fa-search"></div>
+        </section>
+      </header>
+
+      <div class="side-bar">
+        <nav class="navbar">
+          <div id="close-btn"><i class="fa fa-angle-left"></i>Close Menu</div>
+          <a href="home.html">Home</a>
+          <a href="#">Most Popular</a>
+          <a href="#">Movies</a>
+          <a href="#">Subbed</a>
+          <a href="#">Dubbed</a>
+          <a href="#">OVAs</a>
+          <a href="#">ONAs</a>
+          <a href="#">Specials</a>
+
+          <div class="title">Genre</div>
+          <div class="row">
+            <a href="#">Action</a>
+<a href="#">Adventure</a>
+<a href="#">Fantasy</a>
+<a href="#">Romance</a>
+<a href="#">Comedy</a>
+<a href="#">Slice of Life</a>
+<a href="#">Horror</a>
+<a href="#">Mystery</a>
+<a href="#">Sci-Fi</a>
+<a href="#">Mecha</a>
+<a href="#">Supernatural</a>
+<a href="#">Thriller</a>
+<a href="#">Drama</a>
+<a href="#">Psychological</a>
+<a href="#">Ecchi</a>
+<a href="#">Seinen</a>
+<a href="#">Shounen</a>
+<a href="#">Shoujo</a>
+<a href="#">Isekai</a>
+<a href="#">Sports</a>
+          </div>
+
+        </nav>
+      </div>
+
+      <!-- filter section start -->
+      <section class="filter"> 
+        <h1 class="heading">filter</h1>
+        <form action="">
+            <div class="list-container">
+                <div class="list">
+                    <span>type</span>
+                    <input type="text" readonly value="all" class="output">
+                    <div class="items">
+                        <div class="item">all</div>
+                        <div class="item">movie</div>
+                        <div class="item">TV</div>
+                        <div class="item">OVAs</div>
+                        <div class="item">ONAs</div>
+                        <div class="item">Specials</div>
+                    </div>
+                </div>
+
+                <div class="list">
+                    <span>status</span>
+                    <input type="text" readonly value="all" class="output">
+                    <div class="items">
+                        <div class="item">all</div>
+                        <div class="item">Ongoing</div>
+                        <div class="item">Completed</div>
+                        <div class="item">Upcoming</div>
+                    </div>
+                </div>
+
+                <div class="list">
+                    <span>sub</span>
+                    <input type="text" readonly value="all" class="output">
+                    <div class="items">
+                           <div class="item">all</div>
+                        <div class="item">SUB</div>
+                        <div class="item">DUB</div>
+                        <div class="item">RAW</div>
+                    </div>
+                </div>
+
+                  <div class="list">
+                    <span>Season</span>
+                    <input type="text" readonly value="all" class="output">
+                    <div class="items">
+                           <div class="item">all</div>
+                        <div class="item">Spring</div>
+                        <div class="item">Summer</div>
+                        <div class="item">fall</div>
+                        <div class="item">Winter</div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="genere">
+                <input type="checkbox" name="c1" id="c1">
+<label for="c1">Action</label>
+
+<input type="checkbox" name="c2" id="c2">
+<label for="c2">Adventure</label>
+
+<input type="checkbox" name="c3" id="c3">
+<label for="c3">Comedy</label>
+
+<input type="checkbox" name="c4" id="c4">
+<label for="c4">Drama</label>
+
+<input type="checkbox" name="c5" id="c5">
+<label for="c5">Fantasy</label>
+
+<input type="checkbox" name="c6" id="c6">
+<label for="c6">Magic</label>
+
+<input type="checkbox" name="c7" id="c7">
+<label for="c7">Supernatural</label>
+
+<input type="checkbox" name="c8" id="c8">
+<label for="c8">Horror</label>
+
+<input type="checkbox" name="c9" id="c9">
+<label for="c9">Mystery</label>
+
+<input type="checkbox" name="c10" id="c10">
+<label for="c10">Psychological</label>
+
+<input type="checkbox" name="c11" id="c11">
+<label for="c11">Romance</label>
+
+<input type="checkbox" name="c12" id="c12">
+<label for="c12">Sci-Fi</label>
+
+<input type="checkbox" name="c13" id="c13">
+<label for="c13">Slice of Life</label>
+
+<input type="checkbox" name="c14" id="c14">
+<label for="c14">Sports</label>
+
+<input type="checkbox" name="c15" id="c15">
+<label for="c15">Thriller</label>
+
+<input type="checkbox" name="c16" id="c16">
+<label for="c16">Mecha</label>
+
+<input type="checkbox" name="c17" id="c17">
+<label for="c17">Military</label>
+
+<input type="checkbox" name="c18" id="c18">
+<label for="c18">Historical</label>
+
+<input type="checkbox" name="c19" id="c19">
+<label for="c19">Demons</label>
+
+<input type="checkbox" name="c20" id="c20">
+<label for="c20">Martial Arts</label>
+
+<input type="checkbox" name="c21" id="c21">
+<label for="c21">Shounen</label>
+
+<input type="checkbox" name="c22" id="c22">
+<label for="c22">Shoujo</label>
+
+<input type="checkbox" name="c23" id="c23">
+<label for="c23">Seinen</label>
+
+<input type="checkbox" name="c24" id="c24">
+<label for="c24">Isekai</label>
+
+<input type="checkbox" name="c25" id="c25">
+<label for="c25">School</label>
+
+            </div>
+            <input type="submit" value="filter anime" class="btn">
+        </form>
+      </section>
+      <!-- filter section ends -->
+
+      <section class="trending">
+        <h1 class="heading">Most Popular</h1>
+        <div class="trending-slider posts-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide post">
+              <div class="image">
+                <img src="images/solo leveling.jpg" alt="">
+                <p class="type">TV</p>
+                <p class="caption">SUB</p>
+              </div>
+              <h3><a href="#">Solo leveling</a></h3>
+            </div>
+             <div class="swiper-slide post">
+              <div class="image">
+                <img src="images/blue lock.jpg" alt="">
+                <p class="type">TV</p>
+                <p class="caption">SUB</p>
+              </div>
+              <h3><a href="#">Blue lock</a></h3>
+            </div>
+            <div class="swiper-slide post">
+              <div class="image">
+                <img src="images/death note.webp" alt="">
+                <p class="type">TV</p>
+                <p class="caption">SUB</p>
+              </div>
+              <h3><a href="#">Death Note</a></h3>
+            </div>
+            <div class="swiper-slide post">
+              <div class="image">
+                <img src="images/one punchman.jpg" alt="">
+                <p class="type">TV</p>
+                <p class="caption">SUB</p>
+              </div>
+              <h3><a href="#">One Punch Man</a></h3>
+            </div>
+             <div class="swiper-slide post">
+              <div class="image">
+                <img src="images/sakamoto_days.jpg" alt="">
+                <p class="type">TV</p>
+                <p class="caption">SUB</p>
+              </div>
+              <h3><a href="#">Sakamoto Days</a></h3>
+            </div>
+             <div class="swiper-slide post">
+              <div class="image">
+                <img src="images/dbz.webp" alt="">
+                <p class="type">TV</p>
+                <p class="caption">SUB</p>
+              </div>
+              <h3><a href="#">Dragon Ball Z</a></h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <footer class="footer">
+
+        <section>
+
+          <div class="list">
+            <h3>A-Z list</h3>
+            <p>searching order by alphabate name A to Z</p>
+            <div class="list-links">
+              <a href="#">#</a>
+               <a href="#">0-9</a>
+                <a href="#">a</a>
+<a href="#">b</a>
+<a href="#">c</a>
+<a href="#">d</a>
+<a href="#">e</a>
+<a href="#">f</a>
+<a href="#">g</a>
+<a href="#">h</a>
+<a href="#">i</a>
+<a href="#">j</a>
+<a href="#">k</a>
+<a href="#">l</a>
+<a href="#">m</a>
+<a href="#">n</a>
+<a href="#">o</a>
+<a href="#">p</a>
+<a href="#">q</a>
+<a href="#">r</a>
+<a href="#">s</a>
+<a href="#">t</a>
+<a href="#">u</a>
+<a href="#">v</a>
+<a href="#">w</a>
+<a href="#">x</a>
+<a href="#">y</a>
+<a href="#">z</a>
+
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="extra-links">
+              <a href="#">terms of use</a>
+              <a href="#">our policy</a>
+              <a href="#">feedback</a>
+              <a href="#">contact us</a>
+            </div>
+            <div class="share">
+              <a href="#" class="fab fa-youtube"></a>
+              <a href="#" class="fab fa-whatsapp"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+              <a href="#" class="fab fa-instagram"></a>
+            </div>
+          </div>
+
+          <div class="credit">copyright &copy; 2025 by
+          <span>mr.web designer</span> | all right reserved |
+          </div>
+        </section>
+
+      </footer>
+
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</html>
